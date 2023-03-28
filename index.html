@@ -7,22 +7,75 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app">
-      <div class="flex">
-        <a href="https://vitejs.dev" class="flex-1 aspect-square" target="_blank">
-          <img src="/vite.svg" class="logo h-full w-full" alt="Vite logo" />
+    <div class="flex flex-col h-screen w-screen">
+      <div id="app" class="w-full grow flex self-center flex-col justify-center items-center">
+        <a href="https://global.mhdonline.cz" class="p-3 flex justify-center mb-3" target="_blank">
+          <img src="/MHDonline_logo.png" class="logo overflow-hidden rounded-md" alt="MHDonline" />
         </a>
-        <a href="https://www.typescriptlang.org/" class="flex-1 aspect-square" target="_blank">
-          <img src="src/typescript.svg" class="logo vanilla h-full w-full" alt="TypeScript logo" />
-        </a>
+        <h1 class="mb-10">Internetová platforma pro dopravní podniky měst ČR pro vizualizaci aktuální polohy vozů MHD</h1>
+
+        <div class="mb-8 inline-block border-b-2 border-gray-700 bg-gray-100 rounded-md px-10 py-5 flex flex-col gap-4">
+          <p>
+            Platforma slouží k vizualizaci veřejné hromadné dopravy... polohy aktuálních vozidel, čtení jízdních řádů, zobrazování trasy jedoucích spojů. 
+          </p>
+          <div>
+            <p>V současné době je do aplikace zapojeno přes 20 měst a celkem 3 společnosti:</p>
+            <div class="mt-2 grid grid-cols-3 gap-8">
+              <a href="https://global.mhdonline.cz">
+                <div class="w-full h-full flex items-center justify-center rounded-md overflow-hidden shadow-inner hover:drop-shadow-lg px-6 py-4 bg-white">
+                  <img src="/arriva-logo.svg" class="w-5/6" />
+                </div>
+              </a>
+              <a href="https://online.dpmp.cz">
+                <div class="w-full h-full flex items-center justify-center rounded-md overflow-hidden shadow-inner hover:drop-shadow-lg px-6 py-4 bg-white">
+                  <img src="/pardubice_logo.svg" class="w-5/6" />
+                </div>
+              </a>
+              <a href="https://kromeriz.mhdonline.cz">
+                <div class="w-full h-full flex items-center justify-center rounded-md overflow-hidden shadow-inner hover:drop-shadow-lg px-6 py-4 bg-white">
+                  <img src="/kromeriz-logo.png" class="w-5/6" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <p>
+            Tento projekt je rozdělen do dvou částí: webová aplikace a informační backend. Tato část je webová aplikace. Informační backend vytvářel 
+            <a href="https://b2019kacaja.delta-www.cz/maturita">Jakub Kacálek</a>
+            .
+          </p>
+        </div>
+      
+        <div class="flex w-full justify-center gap-8">
+          <div class="max-w-sm rounded overflow-hidden shadow-inner hover:drop-shadow-lg px-6 py-4 bg-gray-100">
+            <a
+              target="_blank"
+              class="block bg-green-600 hover:bg-green-500 text-white hover:text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-600 rounded"
+              href="/Dokumentace.pdf">
+              Dokumentace (PDF)
+            </a>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-inner hover:drop-shadow-lg px-6 py-4 bg-gray-100">
+            <a
+              target="_blank"
+              class="block bg-orange-400 hover:bg-yellow-400 text-white hover:text-white font-bold py-2 px-4 border-b-4 border-orange-500 hover:border-yellow-500 rounded"
+              href="/Dokumentace.pdf">
+              Dokumentace (Zdrojový kód)
+            </a>
+          </div>
+          <div class="max-w-sm rounded overflow-hidden shadow-inner hover:drop-shadow-lg px-6 py-4 bg-gray-100">
+            <a
+              target="_blank"
+              class="block bg-blue-500 hover:bg-blue-400 text-white hover:text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded"
+              href="https://global.mhdonline.cz">
+              Web (živá verze)
+            </a>
+          </div>
+        </div>
       </div>
-      <h1>Vite + TypeScript</h1>
-      <div class="card">
-        <button id="counter" type="button"></button>
+      
+      <div class="rounded-md m-4 px-3 py-5 text-xl font-bold bottom-2 left-2 right-2 text-center bg-gray-300">
+        Jan Volhejn © 2023
       </div>
-      <p class="read-the-docs">
-        Click on the Vite and TypeScript logos to learn more
-      </p>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
